@@ -1,2 +1,2 @@
-# spike-fileupload
-A simple fileupload for angular using primeng
+Para probarlo, solo debes hacer npm i --legacy-peer-deps
+

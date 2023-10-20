@@ -1,0 +1,13 @@
+<p-toast></p-toast>
+
+<div class="card">
+    <h5>Upload</h5>
+    <p-fileUpload  mode="basic" name="demo[]" chooseLabel="Subir archivo" url="./upload.php" (onUpload)="onUpload($event)"
+            [multiple]="multiple" accept=".csv, text/csv" [maxFileSize]="maxSize">
+            <ng-template pTemplate="content">
+                <ul *ngIf="uploadedFiles.length">
+                    <li *ngFor="let file of uploadedFiles">{{file.name}} - {{file.size}} bytes</li>
+                </ul>
+            </ng-template>
+    </p-fileUpload>
+</div>
